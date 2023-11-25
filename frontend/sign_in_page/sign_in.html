@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sign_in_page</title>
+  <link rel="stylesheet" href="sign_in.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="container">
+    <div id="sign_in">
+      <h1><b>Sign In</b></h1>
+      <form action="" method="">
+        <div class="input_field">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="User Name">
+        </div>
+        <div class="input_field">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password" >
+        </div>
+        <div id="forget_pass">
+          <p> <b>Forget Password?</b><a href="">Click here</a></p>
+        </div>
+
+        <div id="footer_buttons">
+          
+            <button class="footer_sign_in_up" type="submit">Sing in</button>
+          
+          
+            <button class="footer_sign_in_up" type="button" onclick="go_to_sign_up()">Sing up</button>
+            
+        </div>     
+      </form>
+      
+    </div>
+
+  </div>
+  <script>
+    function go_to_sign_up(){
+            window.location.href="/sign_up_page/sign_up.html";
+    }
+  </script>
+  
+</body>
+</html>

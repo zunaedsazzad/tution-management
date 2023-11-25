@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign_up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div id="container">
+        <div id="sign_up">
+          <h1><b>Sign Up</b></h1>
+          <form action="" method="">
+            <div class="input_field">
+                <i class="fa-solid fa-envelope"></i>
+              <input type="text" placeholder="Email id">
+            </div>
+            <div class="input_field">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Name">
+
+            </div>
+            <div class="input_field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Create Password" >
+            </div>
+            <h2>Select user type</h2>
+            <div id="user_type">
+                <label><input class="box" type="radio" name="user_type" value="guardian"> Guardian</label>
+                <label ><input class="box" type="radio" name="user_type" value="student"> Student</label>
+                <label><input class="box" type="radio" name="user_type" value="teacher"> Teacher</label>
+                <label><input class="box" type="radio" name="user_type" value="admin"> Admin</label>
+            </div>
+    
+            <div id="footer_buttons">
+              
+                <button class="footer_sign_in_up"type="button"
+                onclick="go_to_sign_in()">Sign in</button>
+              
+              
+                <button class="footer_sign_in_up" type="submit">Sign up</button>
+                
+            </div>     
+          </form>
+          
+        </div>
+    
+      </div>
+      <script>
+        function go_to_sign_in(){
+            window.location.href="/sign_in_page/sign_in.html";
+        }
+      </script>
+</body>
+</html>
